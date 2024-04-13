@@ -8,7 +8,12 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 300;
 }
 
@@ -1015,8 +1020,15 @@ p {
   color: #000000;
   line-height: 40px;
 }
+.appscreen-section .appscreen-section-inner .screenslider {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  animation: marquee-desktop calc(var(--card-speed, 1.5s) * var(--card-count, 16)) linear infinite;
+}
 .appscreen-section .appscreen-section-inner .screenslider .appscreen-card {
   padding: 0.8rem;
+  min-width: 300px;
 }
 .appscreen-section .appscreen-section-inner .screenslider .appscreen-card img {
   max-width: 100%;
@@ -1259,5 +1271,13 @@ p {
   }
   100% {
     transform: translateY(0);
+  }
+}
+@keyframes marquee-desktop {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(calc(-50% - 16px), 0, 0);
   }
 }/*# sourceMappingURL=style.css.map */
