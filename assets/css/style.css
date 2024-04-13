@@ -5,6 +5,7 @@ body {
   font-family: "Hanken Grotesk", sans-serif;
   font-weight: 300;
   color: #000000;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -41,6 +42,11 @@ p {
     font-size: 2.6rem;
   }
 }
+@media screen and (max-width: 767px) {
+  .title-1 {
+    font-size: 2.1rem;
+  }
+}
 
 .title-2 {
   font-size: 2.6rem;
@@ -50,6 +56,11 @@ p {
 @media screen and (max-width: 991px) {
   .title-2 {
     font-size: 2.2rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .title-2 {
+    font-size: 1.9rem;
   }
 }
 
@@ -107,11 +118,19 @@ p {
 }
 @media screen and (max-width: 576px) {
   .banner-section .banner-row h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 }
 .banner-section .banner-row p {
   font-size: 1.4rem;
+}
+@media screen and (max-width: 576px) {
+  .banner-section .banner-row p {
+    font-size: 1.2rem;
+  }
+  .banner-section .banner-row p br {
+    display: none;
+  }
 }
 .banner-section .banner-row .docors-list {
   display: flex;
@@ -166,6 +185,11 @@ p {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 576px) {
+  .banner-section .banner-row .btn-row .btn {
+    font-size: 1.05rem;
+  }
+}
 @media screen and (max-width: 520px) {
   .banner-section .banner-row .btn-row .btn {
     width: 100%;
@@ -206,6 +230,11 @@ p {
 .banner-section .banner-row .right-inner .phone-img {
   max-width: 280px;
   margin-top: 2.5rem;
+}
+@media screen and (max-width: 576px) {
+  .banner-section .banner-row .right-inner .phone-img {
+    margin-top: 1.8rem;
+  }
 }
 @media screen and (max-width: 520px) {
   .banner-section .banner-row .right-inner .phone-img {
@@ -254,7 +283,7 @@ p {
   .assist-section ul {
     display: flex;
     overflow-x: auto;
-    grid-gap: 1.5rem;
+    grid-gap: 1.2rem;
   }
 }
 .assist-section ul li {
@@ -266,6 +295,7 @@ p {
 @media screen and (max-width: 767px) {
   .assist-section ul li {
     min-width: 220px;
+    padding: 1.5rem;
   }
 }
 .assist-section ul li .icon-row {
@@ -283,8 +313,20 @@ p {
   margin-left: auto;
   transition: all ease-in 0.1s;
 }
+@media screen and (max-width: 767px) {
+  .assist-section ul li .icon-row .icons {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+  }
+}
 .assist-section ul li .titles {
   font-size: 1.4rem;
+}
+@media screen and (max-width: 767px) {
+  .assist-section ul li .titles {
+    font-size: 1.2rem;
+  }
 }
 .assist-section ul li:hover {
   background: #F5FE6A;
@@ -626,7 +668,7 @@ p {
 }
 @media screen and (max-width: 991px) {
   .documentation-section .documentation-inner {
-    padding: 0 3rem;
+    padding: 0 2rem;
   }
 }
 .documentation-section .documentation-inner .left-col {
@@ -738,6 +780,7 @@ p {
   background: #ffffff;
   border-radius: 30px;
   display: flex;
+  overflow-x: hidden;
 }
 @media screen and (max-width: 767px) {
   .picksickness-section .picksickness-card {
