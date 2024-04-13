@@ -526,6 +526,7 @@ p {
 @media screen and (max-width: 991px) {
   .doctorslist-section .doctorslist-section-inner .doctorslist-row .doctorslist-items {
     overflow-x: auto;
+    grid-gap: 1.2rem;
   }
   .doctorslist-section .doctorslist-section-inner .doctorslist-row .doctorslist-items::-webkit-scrollbar {
     width: 0;
@@ -552,7 +553,8 @@ p {
 }
 @media screen and (max-width: 991px) {
   .doctorslist-section .doctorslist-section-inner .doctorslist-row .doctorslist-items li {
-    min-width: 300px;
+    min-width: 280px;
+    min-height: 320px;
   }
 }
 .doctorslist-section .doctorslist-section-inner .doctorslist-row .doctorslist-items li .dr-images {
@@ -562,6 +564,13 @@ p {
   margin-bottom: 1rem;
   background: #EBEBEB;
   overflow: hidden;
+}
+@media screen and (max-width: 991px) {
+  .doctorslist-section .doctorslist-section-inner .doctorslist-row .doctorslist-items li .dr-images {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+  }
 }
 .doctorslist-section .doctorslist-section-inner .doctorslist-row .doctorslist-items li .dr-images img {
   width: 100%;
@@ -573,6 +582,11 @@ p {
   min-height: 50px;
   max-width: 150px;
   font-size: 1.8rem;
+}
+@media screen and (max-width: 991px) {
+  .doctorslist-section .doctorslist-section-inner .doctorslist-row .doctorslist-items li h4 {
+    font-size: 1.5rem;
+  }
 }
 .doctorslist-section .doctorslist-section-inner .doctorslist-row .doctorslist-items li p {
   font-size: 1.3rem;
@@ -780,7 +794,6 @@ p {
   background: #ffffff;
   border-radius: 30px;
   display: flex;
-  overflow-x: hidden;
 }
 @media screen and (max-width: 767px) {
   .picksickness-section .picksickness-card {
@@ -1093,9 +1106,9 @@ p {
 }
 @media screen and (max-width: 576px) {
   .stats-section .stats-card .right-card ul {
-    flex-direction: column;
     grid-gap: 1.2rem;
     justify-self: center;
+    overflow-x: auto;
   }
 }
 .stats-section .stats-card .right-card ul li {
@@ -1122,13 +1135,6 @@ p {
     max-width: 18px;
   }
 }
-@media screen and (max-width: 767px) {
-  .stats-section .stats-card .right-card ul li .left-icon {
-    width: 45px;
-    height: 45px;
-    border-radius: 45px;
-  }
-}
 .stats-section .stats-card .right-card ul li .right-dtl h1 {
   margin: 0;
   line-height: 1;
@@ -1139,11 +1145,6 @@ p {
     font-size: 2rem;
   }
 }
-@media screen and (max-width: 767px) {
-  .stats-section .stats-card .right-card ul li .right-dtl h1 {
-    font-size: 1.5rem;
-  }
-}
 .stats-section .stats-card .right-card ul li .right-dtl p {
   margin: 0;
   font-size: 1.45rem;
@@ -1151,11 +1152,6 @@ p {
 @media screen and (max-width: 1100px) {
   .stats-section .stats-card .right-card ul li .right-dtl p {
     font-size: 1.2rem;
-  }
-}
-@media screen and (max-width: 767px) {
-  .stats-section .stats-card .right-card ul li .right-dtl p {
-    font-size: 1rem;
   }
 }
 
@@ -1204,8 +1200,9 @@ p {
 .main-footer .email-phone li h4 {
   font-size: 14px;
   margin-top: 20px;
-  color: #010101;
+  color: #010101 !important;
   font-weight: 400;
+  text-decoration: none !important;
 }
 .main-footer .email-phone li p {
   text-transform: uppercase;

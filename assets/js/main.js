@@ -2,7 +2,9 @@ $('.screenslider').slick({
     dots: false,
     arrows: false,
     infinite: true,
-    speed: 300,
+    autoplay: true,
+    autoplayspeed: 700,
+    speed: 700,
     slidesToShow: 7.5,
     slidesToScroll: 4,
     responsive: [
